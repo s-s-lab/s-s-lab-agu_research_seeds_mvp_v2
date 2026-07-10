@@ -1,0 +1,35 @@
+{
+  "id": "seed-008",
+  "status": "draft",
+  "featured": false,
+  "title": "対話型ロボットによる学習支援（架空サンプル・下書き）",
+  "catchphrase": "学習者のつまずきに寄り添う対話を設計する。",
+  "summary": "対話型ロボットやチャットUIを用いて、学習者の質問、振り返り、次の学習行動を支援する下書き状態の架空サンプル研究シーズです。",
+  "background": "このデータは公開中データだけが表示されることを確認するための下書きサンプルです。",
+  "strengths": ["対話ログの分析", "学習支援シナリオの設計"],
+  "expectedApplications": ["個別学習支援", "学習相談"],
+  "collaborationNeeds": ["学習支援場面の検証", "UI評価"],
+  "researcherName": "架空研究者H",
+  "researcherNameKana": "かくうけんきゅうしゃえいち",
+  "affiliation": "青山学院大学 サンプル教育工学領域（架空）",
+  "department": "サンプル対話システム部門（架空）",
+  "position": "サンプル講師（架空）",
+  "profileUrl": "https://example.com/profiles/sample-h",
+  "mainField": "教育・学習支援",
+  "subFields": ["対話システム", "ロボット"],
+  "keywords": ["対話型ロボット", "学習支援", "教育工学"],
+  "freeKeywords": ["チャットUI"],
+  "sdgs": [4, 9],
+  "collaborationTypes": ["実証実験", "共同研究"],
+  "patentStatus": "架空サンプルのため未設定",
+  "thumbnail": "media/seeds/seed-008/thumbnail.svg",
+  "images": [
+    {
+      "src": "media/seeds/seed-008/thumbnail.svg",
+      "alt": "対話型学習支援を表す抽象図",
+      "caption": "下書きデータ確認用の画像"
+    }
+  ],
+  "publishedAt": "2026-06-18",
+  "updatedAt": "2026-06-18"
+}

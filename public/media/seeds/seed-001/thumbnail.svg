@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="防災データ統合を表す抽象図">
+  <rect width="960" height="540" fill="#eef7ff"/>
+  <rect x="80" y="82" width="800" height="376" rx="24" fill="#ffffff" stroke="#b8d7ef" stroke-width="4"/>
+  <path d="M160 370c100-120 160-62 240-164 68-86 138-90 230-24 48 34 88 46 162 30" fill="none" stroke="#145a8d" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="180" cy="354" r="34" fill="#2b8a8a"/>
+  <circle cx="402" cy="207" r="34" fill="#d49b18"/>
+  <circle cx="792" cy="212" r="34" fill="#bc5b4b"/>
+  <text x="96" y="70" font-family="system-ui, sans-serif" font-size="34" font-weight="700" fill="#123c69">Disaster Data</text>
+</svg>

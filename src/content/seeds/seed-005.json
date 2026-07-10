@@ -1,0 +1,53 @@
+{
+  "id": "seed-005",
+  "status": "published",
+  "featured": true,
+  "title": "古典籍テキストのデジタル解読支援（架空サンプル）",
+  "catchphrase": "読みにくい資料を、次の研究資源へ変える。",
+  "summary": "古典籍や歴史資料の画像と翻刻テキストを整理し、研究者や地域文化施設が資料を読み解きやすくする架空サンプル研究シーズです。",
+  "background": "地域や大学に残る資料は、専門知識がないと活用しにくいことがあります。デジタル化と注釈整理により、資料の共有と教育利用を支援します。",
+  "strengths": [
+    "画像とテキストを対応付けて管理",
+    "注釈や読みの候補を共有しやすい",
+    "文化施設・学校での活用を想定した表示"
+  ],
+  "expectedApplications": [
+    "地域文化資料の公開",
+    "博物館・図書館展示の補助",
+    "学校教育での史料活用"
+  ],
+  "collaborationNeeds": [
+    "資料画像の提供",
+    "注釈作成の共同検討",
+    "展示・教育利用の実証"
+  ],
+  "researcherName": "架空研究者E",
+  "researcherNameKana": "かくうけんきゅうしゃいー",
+  "affiliation": "青山学院大学 サンプル人文学領域（架空）",
+  "department": "サンプル文化情報部門（架空）",
+  "position": "サンプル准教授（架空）",
+  "profileUrl": "https://example.com/profiles/sample-e",
+  "mainField": "人文・文化情報",
+  "subFields": ["古典籍", "デジタルアーカイブ"],
+  "keywords": ["古典籍", "デジタルアーカイブ", "翻刻", "文化資源"],
+  "freeKeywords": ["地域資料", "教育利用"],
+  "sdgs": [4, 11],
+  "collaborationTypes": ["資料提供", "教育連携", "共同研究"],
+  "patentStatus": "該当なし",
+  "thumbnail": "media/seeds/seed-005/thumbnail.svg",
+  "images": [
+    {
+      "src": "media/seeds/seed-005/thumbnail.svg",
+      "alt": "古典籍とデジタル注釈を表す抽象図",
+      "caption": "画像と翻刻テキストを対応付けるイメージ"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "デジタル資料サンプル",
+      "url": "https://example.com/research-seeds/seed-005"
+    }
+  ],
+  "publishedAt": "2026-05-21",
+  "updatedAt": "2026-07-03"
+}

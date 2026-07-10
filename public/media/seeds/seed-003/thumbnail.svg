@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="細胞画像解析を表す抽象図">
+  <rect width="960" height="540" fill="#fff7f3"/>
+  <rect x="112" y="82" width="736" height="376" rx="26" fill="#ffffff" stroke="#efc9bd" stroke-width="4"/>
+  <g fill="#ffe1d8" stroke="#bc5b4b" stroke-width="8">
+    <circle cx="280" cy="230" r="58"/>
+    <circle cx="430" cy="320" r="76"/>
+    <circle cx="610" cy="230" r="66"/>
+    <circle cx="690" cy="352" r="42"/>
+  </g>
+  <path d="M250 430h470" stroke="#145a8d" stroke-width="14" stroke-linecap="round"/>
+  <text x="130" y="122" font-family="system-ui, sans-serif" font-size="34" font-weight="700" fill="#123c69">Cell Imaging</text>
+</svg>

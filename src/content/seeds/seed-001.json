@@ -1,0 +1,62 @@
+{
+  "id": "seed-001",
+  "status": "published",
+  "featured": true,
+  "title": "地域防災のためのセンサデータ統合基盤（架空サンプル）",
+  "catchphrase": "まちの小さな変化を集め、早めの判断につなげる。",
+  "summary": "気象、河川、混雑、避難所状況などのセンサデータを統合し、自治体や企業が災害時の判断を行いやすくするための架空サンプル研究シーズです。",
+  "background": "地域の防災現場では、複数の情報源を短時間で把握する必要があります。形式の異なるデータを一つの画面で比較できる仕組みを想定しています。",
+  "strengths": [
+    "複数センサのデータ形式をそろえて扱う設計",
+    "ダッシュボードや通知システムに展開しやすい構造",
+    "自治体職員や住民向けの表示を分けて検討できる"
+  ],
+  "expectedApplications": [
+    "避難判断支援",
+    "防災訓練の可視化",
+    "地域インフラのモニタリング"
+  ],
+  "collaborationNeeds": [
+    "実証フィールドの提供",
+    "センサデータのサンプル提供",
+    "自治体業務に合わせた画面検証"
+  ],
+  "researcherName": "架空研究者A",
+  "researcherNameKana": "かくうけんきゅうしゃえー",
+  "affiliation": "青山学院大学 サンプル情報学領域（架空）",
+  "department": "サンプルデータデザイン部門（架空）",
+  "position": "サンプル教授（架空）",
+  "profileUrl": "https://example.com/profiles/sample-a",
+  "mainField": "情報・データサイエンス",
+  "subFields": ["防災情報", "可視化"],
+  "keywords": ["防災", "センサデータ", "可視化", "自治体連携"],
+  "freeKeywords": ["避難支援", "地域DX"],
+  "sdgs": [9, 11, 13],
+  "collaborationTypes": ["共同研究", "実証実験", "技術相談"],
+  "patentStatus": "架空サンプルのため未設定",
+  "intellectualProperty": "実運用時に個別確認する想定です。",
+  "thumbnail": "media/seeds/seed-001/thumbnail.svg",
+  "images": [
+    {
+      "src": "media/seeds/seed-001/thumbnail.svg",
+      "alt": "防災データ統合を表す抽象図",
+      "caption": "複数データを統合する画面イメージ"
+    }
+  ],
+  "videos": [
+    {
+      "title": "画面確認用のYouTube埋め込みサンプル",
+      "url": "https://www.youtube.com/watch?v=ysz5S6PUM-U",
+      "provider": "YouTube"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "関連資料サンプル",
+      "url": "https://example.com/research-seeds/seed-001"
+    }
+  ],
+  "contactLabel": "防災連携に関する問い合わせ",
+  "publishedAt": "2026-04-01",
+  "updatedAt": "2026-07-01"
+}

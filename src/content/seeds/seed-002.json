@@ -1,0 +1,53 @@
+{
+  "id": "seed-002",
+  "status": "published",
+  "featured": true,
+  "title": "環境負荷を抑える高分子材料設計（架空サンプル）",
+  "catchphrase": "性能と環境配慮を両立する材料選びを支える。",
+  "summary": "高分子材料の性質をモデル化し、軽量化、再利用性、耐久性などの条件を比較しながら材料設計を検討する架空サンプル研究シーズです。",
+  "background": "製品開発では、性能だけでなくライフサイクル全体での環境負荷を考える必要があります。試作前の候補探索を効率化することを想定しています。",
+  "strengths": [
+    "複数条件を同時に比較する材料評価",
+    "試作前の候補選定を支援するデータ整理",
+    "製造現場の制約を反映した条件設定"
+  ],
+  "expectedApplications": [
+    "包装材",
+    "軽量部材",
+    "リサイクル材料の評価"
+  ],
+  "collaborationNeeds": [
+    "材料サンプルの提供",
+    "評価条件の共同設計",
+    "試作・耐久試験の連携"
+  ],
+  "researcherName": "架空研究者B",
+  "researcherNameKana": "かくうけんきゅうしゃびー",
+  "affiliation": "青山学院大学 サンプル理工学領域（架空）",
+  "department": "サンプル材料科学部門（架空）",
+  "position": "サンプル准教授（架空）",
+  "profileUrl": "https://example.com/profiles/sample-b",
+  "mainField": "理工・材料",
+  "subFields": ["高分子", "環境材料"],
+  "keywords": ["高分子", "環境負荷", "材料設計", "リサイクル"],
+  "freeKeywords": ["軽量化", "耐久性"],
+  "sdgs": [9, 12, 13],
+  "collaborationTypes": ["共同研究", "試作品評価", "技術相談"],
+  "patentStatus": "架空サンプルのため未設定",
+  "thumbnail": "media/seeds/seed-002/thumbnail.svg",
+  "images": [
+    {
+      "src": "media/seeds/seed-002/thumbnail.svg",
+      "alt": "分子構造と材料設計を表す抽象図",
+      "caption": "材料候補を比較するイメージ"
+    }
+  ],
+  "relatedLinks": [
+    {
+      "label": "材料評価資料サンプル",
+      "url": "https://example.com/research-seeds/seed-002"
+    }
+  ],
+  "publishedAt": "2026-04-10",
+  "updatedAt": "2026-06-20"
+}

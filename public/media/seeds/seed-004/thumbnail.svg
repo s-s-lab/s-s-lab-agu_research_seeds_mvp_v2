@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="観光回遊データを表す抽象図">
+  <rect width="960" height="540" fill="#f8fbff"/>
+  <path d="M170 390c90-180 210 40 310-122 88-142 206-38 320-154" fill="none" stroke="#145a8d" stroke-width="18" stroke-linecap="round"/>
+  <g fill="#ffffff" stroke-width="8">
+    <circle cx="170" cy="390" r="42" stroke="#2b8a8a"/>
+    <circle cx="480" cy="268" r="42" stroke="#d49b18"/>
+    <circle cx="800" cy="114" r="42" stroke="#bc5b4b"/>
+  </g>
+  <rect x="100" y="84" width="760" height="372" rx="24" fill="none" stroke="#cfe0ef" stroke-width="4"/>
+  <text x="120" y="126" font-family="system-ui, sans-serif" font-size="34" font-weight="700" fill="#123c69">Tourism Flow</text>
+</svg>

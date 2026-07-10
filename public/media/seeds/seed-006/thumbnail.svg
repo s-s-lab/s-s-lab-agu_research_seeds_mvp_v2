@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="探究学習の評価を表す抽象図">
+  <rect width="960" height="540" fill="#f7fbff"/>
+  <rect x="128" y="106" width="704" height="328" rx="24" fill="#ffffff" stroke="#cfe0ef" stroke-width="4"/>
+  <path d="M220 352l104-104 94 72 136-148 184 180" fill="none" stroke="#2b8a8a" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="324" cy="248" r="24" fill="#d49b18"/>
+  <circle cx="554" cy="172" r="24" fill="#bc5b4b"/>
+  <text x="154" y="88" font-family="system-ui, sans-serif" font-size="34" font-weight="700" fill="#123c69">Learning Design</text>
+</svg>

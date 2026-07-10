@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ページを移動しています</title>
+    <script>
+      (function () {
+        var base = "/s-s-lab-agu_research_seeds_mvp_v2/";
+        var path = window.location.pathname;
+        var next = path.startsWith(base) ? path.slice(base.length) : "";
+        var hash = next ? "#/" + next.replace(/^\/+/, "") : "#/";
+        window.location.replace(base + hash + window.location.search);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>ページを移動しています。</p>
+  </body>
+</html>

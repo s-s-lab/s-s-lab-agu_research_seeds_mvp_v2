@@ -1,0 +1,47 @@
+{
+  "id": "seed-007",
+  "status": "published",
+  "featured": false,
+  "title": "ウェルビーイング指標と都市空間の共創評価（架空サンプル）",
+  "catchphrase": "数字と声を組み合わせ、暮らしやすさを考える。",
+  "summary": "住民アンケート、環境データ、公共空間の利用状況などを組み合わせ、都市空間の改善がウェルビーイングに与える影響を検討する架空サンプル研究シーズです。",
+  "background": "まちづくりでは、利用者の実感と客観的データの両方を扱うことが重要です。行政、企業、住民が対話しやすい評価軸を整えます。",
+  "strengths": [
+    "定量データと定性コメントを組み合わせて評価",
+    "施策の前後比較を行いやすい",
+    "住民参加型のワークショップに展開しやすい"
+  ],
+  "expectedApplications": [
+    "公園・広場の改善評価",
+    "健康まちづくり",
+    "地域ワークショップ"
+  ],
+  "collaborationNeeds": [
+    "住民参加の場づくり",
+    "環境・利用データの提供",
+    "評価結果の共同レビュー"
+  ],
+  "researcherName": "架空研究者G",
+  "researcherNameKana": "かくうけんきゅうしゃじー",
+  "affiliation": "青山学院大学 サンプル学際研究領域（架空）",
+  "department": "サンプル社会実装デザイン部門（架空）",
+  "position": "サンプル教授（架空）",
+  "profileUrl": "https://example.com/profiles/sample-g",
+  "mainField": "学際・社会実装",
+  "subFields": ["ウェルビーイング", "都市空間"],
+  "keywords": ["ウェルビーイング", "都市空間", "共創", "評価指標"],
+  "freeKeywords": ["住民参加", "まちづくり"],
+  "sdgs": [3, 11, 17],
+  "collaborationTypes": ["自治体連携", "ワークショップ", "共同研究"],
+  "patentStatus": "該当なし",
+  "thumbnail": "media/seeds/seed-007/thumbnail.svg",
+  "images": [
+    {
+      "src": "media/seeds/seed-007/thumbnail.svg",
+      "alt": "ウェルビーイングと都市空間評価を表す抽象図",
+      "caption": "都市空間と生活実感をつなぐイメージ"
+    }
+  ],
+  "publishedAt": "2026-06-12",
+  "updatedAt": "2026-07-05"
+}

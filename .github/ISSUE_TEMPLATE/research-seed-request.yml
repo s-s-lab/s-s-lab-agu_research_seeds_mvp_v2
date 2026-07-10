@@ -1,0 +1,72 @@
+name: 研究シーズ追加・修正依頼
+description: 研究シーズの追加、修正、画像更新などを依頼するフォームです。
+title: "[研究シーズ依頼]: "
+labels:
+  - research-seed
+body:
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: 依頼種別
+      options:
+        - 新規追加
+        - 既存内容の修正
+        - 画像の追加・変更
+        - リンク・動画URLの修正
+        - 公開停止・下書き化
+    validations:
+      required: true
+  - type: input
+    id: seed_title
+    attributes:
+      label: 研究シーズ名
+      placeholder: 例）地域防災のためのセンサデータ統合基盤
+    validations:
+      required: true
+  - type: input
+    id: researcher_name
+    attributes:
+      label: 研究者名
+      placeholder: 例）氏名
+    validations:
+      required: true
+  - type: input
+    id: affiliation
+    attributes:
+      label: 所属
+      placeholder: 例）学部・研究科・部署名
+    validations:
+      required: true
+  - type: textarea
+    id: change_detail
+    attributes:
+      label: 修正内容
+      description: 追加したい内容、変更したい箇所、掲載可否の注意点などを記入してください。
+    validations:
+      required: true
+  - type: textarea
+    id: reference_url
+    attributes:
+      label: 参考URL
+      description: 研究者プロフィール、論文、研究室ページ、動画などの参考URLがあれば記入してください。
+  - type: dropdown
+    id: has_images
+    attributes:
+      label: 画像の有無
+      options:
+        - 画像あり
+        - 画像なし
+        - 後日提供
+        - 不明
+    validations:
+      required: true
+  - type: input
+    id: preferred_publish_date
+    attributes:
+      label: 公開希望日
+      placeholder: 例）2026-08-01
+  - type: textarea
+    id: notes
+    attributes:
+      label: 補足事項
+      description: 個人情報、公開前確認、連携先との確認事項などがあれば記入してください。

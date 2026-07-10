@@ -1,0 +1,47 @@
+{
+  "id": "seed-006",
+  "status": "published",
+  "featured": false,
+  "title": "探究学習を支える授業デザイン評価（架空サンプル）",
+  "catchphrase": "学びのプロセスを見える化し、授業改善へつなげる。",
+  "summary": "探究学習の活動記録、振り返り、成果物を整理し、学校や教育機関が授業設計を改善するための評価観点を検討する架空サンプル研究シーズです。",
+  "background": "探究学習では成果だけでなく、問いの立て方や協働の過程が重要です。授業者が次の改善点を見つけやすい評価方法を想定しています。",
+  "strengths": [
+    "学習プロセスを複数の観点で整理",
+    "教員研修や授業研究に展開しやすい",
+    "学習者の振り返りと結び付けられる"
+  ],
+  "expectedApplications": [
+    "中高大連携授業",
+    "教員研修",
+    "教育プログラム評価"
+  ],
+  "collaborationNeeds": [
+    "授業実践フィールドの提供",
+    "評価観点の共同設計",
+    "教員・学習者へのヒアリング"
+  ],
+  "researcherName": "架空研究者F",
+  "researcherNameKana": "かくうけんきゅうしゃえふ",
+  "affiliation": "青山学院大学 サンプル教育学領域（架空）",
+  "department": "サンプル学習デザイン部門（架空）",
+  "position": "サンプル助教（架空）",
+  "profileUrl": "https://example.com/profiles/sample-f",
+  "mainField": "教育・学習支援",
+  "subFields": ["探究学習", "授業評価"],
+  "keywords": ["探究学習", "授業デザイン", "教育評価", "教員研修"],
+  "freeKeywords": ["中高大連携", "振り返り"],
+  "sdgs": [4, 17],
+  "collaborationTypes": ["教育連携", "実証実験", "研修設計"],
+  "patentStatus": "該当なし",
+  "thumbnail": "media/seeds/seed-006/thumbnail.svg",
+  "images": [
+    {
+      "src": "media/seeds/seed-006/thumbnail.svg",
+      "alt": "探究学習のプロセス評価を表す抽象図",
+      "caption": "学習プロセスを整理するイメージ"
+    }
+  ],
+  "publishedAt": "2026-06-03",
+  "updatedAt": "2026-06-25"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "seed-004",
+  "status": "published",
+  "featured": false,
+  "title": "観光行動データを用いた地域回遊デザイン（架空サンプル）",
+  "catchphrase": "人の流れを読み、地域の魅力に出会う導線を考える。",
+  "summary": "観光客の移動、滞在、関心の傾向を整理し、地域内の回遊促進や混雑緩和につながる施策を検討する架空サンプル研究シーズです。",
+  "background": "観光地では、来訪者の偏りや混雑、周辺地域への波及が課題になります。データを用いた仮説検証により、施策検討を支援します。",
+  "strengths": [
+    "移動データと地域資源情報を組み合わせて分析",
+    "施策前後の変化を比較しやすい",
+    "自治体・事業者向けの説明資料に展開しやすい"
+  ],
+  "expectedApplications": [
+    "観光ルート設計",
+    "イベント時の混雑緩和",
+    "商店街や地域施設への回遊促進"
+  ],
+  "collaborationNeeds": [
+    "匿名化済み行動データの提供",
+    "地域施設やイベント情報の提供",
+    "施策実証の共同実施"
+  ],
+  "researcherName": "架空研究者D",
+  "researcherNameKana": "かくうけんきゅうしゃでぃー",
+  "affiliation": "青山学院大学 サンプル社会科学領域（架空）",
+  "department": "サンプル地域政策部門（架空）",
+  "position": "サンプル教授（架空）",
+  "profileUrl": "https://example.com/profiles/sample-d",
+  "mainField": "社会科学・地域政策",
+  "subFields": ["観光", "地域経済"],
+  "keywords": ["観光", "行動データ", "地域政策", "混雑緩和"],
+  "freeKeywords": ["回遊", "まちづくり"],
+  "sdgs": [8, 11, 17],
+  "collaborationTypes": ["自治体連携", "実証実験", "政策提案"],
+  "patentStatus": "該当なし",
+  "thumbnail": "media/seeds/seed-004/thumbnail.svg",
+  "images": [
+    {
+      "src": "media/seeds/seed-004/thumbnail.svg",
+      "alt": "観光回遊データを表す抽象図",
+      "caption": "地域内の回遊を可視化するイメージ"
+    }
+  ],
+  "videos": [
+    {
+      "title": "外部動画リンクの表示サンプル",
+      "url": "https://example.com/videos/tourism-sample",
+      "provider": "外部サイト"
+    }
+  ],
+  "publishedAt": "2026-05-14",
+  "updatedAt": "2026-06-15"
+}

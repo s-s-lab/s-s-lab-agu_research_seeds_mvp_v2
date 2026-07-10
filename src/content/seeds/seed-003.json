@@ -1,0 +1,47 @@
+{
+  "id": "seed-003",
+  "status": "published",
+  "featured": false,
+  "title": "細胞画像から学ぶ創薬評価支援（架空サンプル）",
+  "catchphrase": "画像の変化から、候補物質の可能性を読み解く。",
+  "summary": "細胞画像の特徴量を抽出し、薬剤候補の反応や安全性評価の初期検討を支援する架空サンプル研究シーズです。",
+  "background": "創薬や生命科学研究では、多数の画像を継続的に確認する作業が発生します。画像解析を活用して候補の絞り込みを支援することを想定しています。",
+  "strengths": [
+    "細胞画像の特徴量を定量的に扱う",
+    "評価結果を研究者が確認しやすい形で整理",
+    "実験条件の違いを比較しやすい"
+  ],
+  "expectedApplications": [
+    "創薬スクリーニング",
+    "安全性評価",
+    "生命科学研究の画像解析"
+  ],
+  "collaborationNeeds": [
+    "匿名化済み画像データの提供",
+    "評価指標の共同設計",
+    "研究現場での操作性検証"
+  ],
+  "researcherName": "架空研究者C",
+  "researcherNameKana": "かくうけんきゅうしゃしー",
+  "affiliation": "青山学院大学 サンプル生命科学領域（架空）",
+  "department": "サンプルバイオ解析部門（架空）",
+  "position": "サンプル講師（架空）",
+  "profileUrl": "https://example.com/profiles/sample-c",
+  "mainField": "生命科学・ヘルスケア",
+  "subFields": ["画像解析", "創薬支援"],
+  "keywords": ["細胞画像", "創薬", "画像解析", "ヘルスケア"],
+  "freeKeywords": ["スクリーニング", "安全性"],
+  "sdgs": [3, 9],
+  "collaborationTypes": ["共同研究", "データ解析", "技術相談"],
+  "patentStatus": "架空サンプルのため未設定",
+  "thumbnail": "media/seeds/seed-003/thumbnail.svg",
+  "images": [
+    {
+      "src": "media/seeds/seed-003/thumbnail.svg",
+      "alt": "細胞画像解析を表す抽象図",
+      "caption": "画像特徴量を比較するイメージ"
+    }
+  ],
+  "publishedAt": "2026-05-02",
+  "updatedAt": "2026-06-10"
+}

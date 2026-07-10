@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-label="材料設計を表す抽象図">
+  <rect width="960" height="540" fill="#f5fbf5"/>
+  <g fill="none" stroke="#327a56" stroke-width="14">
+    <path d="M220 270h130l82-96 120 192 82-96h106"/>
+    <circle cx="220" cy="270" r="52" fill="#ffffff"/>
+    <circle cx="432" cy="174" r="52" fill="#ffffff"/>
+    <circle cx="552" cy="366" r="52" fill="#ffffff"/>
+    <circle cx="740" cy="270" r="52" fill="#ffffff"/>
+  </g>
+  <rect x="90" y="78" width="780" height="384" rx="26" fill="none" stroke="#c9e3d3" stroke-width="4"/>
+  <text x="110" y="118" font-family="system-ui, sans-serif" font-size="34" font-weight="700" fill="#123c69">Sustainable Polymer</text>
+</svg>
