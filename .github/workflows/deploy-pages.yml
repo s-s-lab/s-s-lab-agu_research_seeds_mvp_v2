@@ -1,7 +1,10 @@
-name: Deploy GitHub Pages
+name: Validate and Deploy GitHub Pages
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
   workflow_dispatch:
@@ -12,7 +15,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: pages
+  group: pages-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -33,6 +36,9 @@ jobs:
       - name: Validate research seed data
         run: npm run validate:data
 
+      - name: Generate AI search index
+        run: npm run generate:ai-index
+
       - name: Lint
         run: npm run lint
 
@@ -43,14 +49,17 @@ jobs:
         run: npm run build
 
       - name: Configure Pages
+        if: github.event_name != 'pull_request'
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload Pages artifact
+        if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
   deploy:
+    if: github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     environment:
