@@ -2,6 +2,7 @@ export type AppRoute =
   | { name: "home"; params: URLSearchParams }
   | { name: "seeds"; params: URLSearchParams }
   | { name: "seedDetail"; seedId: string; params: URLSearchParams }
+  | { name: "consult"; params: URLSearchParams }
   | { name: "about"; params: URLSearchParams }
   | { name: "contact"; params: URLSearchParams }
   | { name: "dataEditor"; params: URLSearchParams }
@@ -26,6 +27,10 @@ export const parseHashRoute = (hash: string): AppRoute => {
 
   if (segments[0] === "seeds" && segments[1]) {
     return { name: "seedDetail", seedId: segments[1], params };
+  }
+
+  if (path === "/consult") {
+    return { name: "consult", params };
   }
 
   if (path === "/about") {
