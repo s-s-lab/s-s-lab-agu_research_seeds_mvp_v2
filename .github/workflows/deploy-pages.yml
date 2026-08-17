@@ -30,7 +30,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Install dependencies
+      - name: Install frontend dependencies
         run: npm install
 
       - name: Validate research seed data
@@ -39,14 +39,30 @@ jobs:
       - name: Generate AI search index
         run: npm run generate:ai-index
 
-      - name: Lint
+      - name: Lint frontend
         run: npm run lint
 
-      - name: Test
+      - name: Test frontend
         run: npm run test
 
-      - name: Build
+      - name: Build frontend
         run: npm run build
+
+      - name: Install Worker dependencies
+        working-directory: worker
+        run: npm install
+
+      - name: Typecheck Worker
+        working-directory: worker
+        run: npm run typecheck
+
+      - name: Test Worker
+        working-directory: worker
+        run: npm test
+
+      - name: Check Worker configuration
+        working-directory: worker
+        run: npm run check
 
       - name: Configure Pages
         if: github.event_name != 'pull_request'
