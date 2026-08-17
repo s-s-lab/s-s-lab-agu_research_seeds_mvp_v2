@@ -5,6 +5,7 @@ import type { AIConsultResponse } from "../types/aiConsult";
 import { AIConsultForm } from "../components/AIConsultForm";
 import { AIConsultResult } from "../components/AIConsultResult";
 import { getPublishedSeeds } from "../utils/seedFilters";
+import "../ai-consult.css";
 
 type AIConsultPageProps = {
   seeds: ResearchSeed[];
