@@ -7,6 +7,7 @@ import { canonicalForHash, parseHashRoute, type AppRoute } from "./utils/routes"
 import { HomePage } from "./pages/HomePage";
 import { SeedsPage } from "./pages/SeedsPage";
 import { SeedDetailPage } from "./pages/SeedDetailPage";
+import { AIConsultPage } from "./pages/AIConsultPage";
 import { AboutPage } from "./pages/AboutPage";
 import { ContactPage } from "./pages/ContactPage";
 import { DataEditorPage } from "./pages/DataEditorPage";
@@ -21,6 +22,7 @@ const routeTitle = (route: AppRoute, seed?: ResearchSeed): string => {
     home: siteConfig.siteName,
     seeds: `研究シーズ一覧 | ${siteConfig.siteName}`,
     seedDetail: `研究シーズ詳細 | ${siteConfig.siteName}`,
+    consult: `AI研究相談 | ${siteConfig.siteName}`,
     about: `研究シーズについて | ${siteConfig.siteName}`,
     contact: `問い合わせ | ${siteConfig.siteName}`,
     dataEditor: `データ編集支援 | ${siteConfig.siteName}`,
@@ -37,6 +39,10 @@ const routeDescription = (route: AppRoute, seed?: ResearchSeed): string => {
 
   if (route.name === "seeds") {
     return "研究分野、キーワード、SDGs、連携希望内容などから研究シーズを検索できます。";
+  }
+
+  if (route.name === "consult") {
+    return "企業・自治体等の課題や実現したいことから、関連する研究シーズや連携の可能性を探すAI研究相談ページです。";
   }
 
   return "青山学院大学の研究シーズを検索・絞り込み・閲覧できるGitHub Pages向けMVPです。";
@@ -111,6 +117,8 @@ export default function App() {
         return <SeedsPage seeds={allSeeds} params={route.params} />;
       case "seedDetail":
         return <SeedDetailPage seed={selectedSeed} seeds={allSeeds} />;
+      case "consult":
+        return <AIConsultPage seeds={allSeeds} />;
       case "about":
         return <AboutPage />;
       case "contact":
