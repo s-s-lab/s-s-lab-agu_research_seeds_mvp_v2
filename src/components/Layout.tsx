@@ -4,6 +4,7 @@ import {
   Mail,
   PenTool,
   Search,
+  Sparkles,
   University,
 } from "lucide-react";
 import { siteConfig } from "../config/site";
@@ -17,6 +18,7 @@ type LayoutProps = {
 const navItems = [
   { href: "#/", label: "トップ", route: "home", icon: University },
   { href: "#/seeds", label: "研究シーズ一覧", route: "seeds", icon: Search },
+  { href: "#/consult", label: "AI研究相談", route: "consult", icon: Sparkles },
   { href: "#/about", label: "研究シーズとは", route: "about", icon: BookOpen },
   { href: "#/contact", label: "問い合わせ", route: "contact", icon: Mail },
   {
@@ -66,6 +68,7 @@ export const Layout = ({ activeRoute, children }: LayoutProps) => (
         <p>GitHub PagesとJSONファイルで運用する、研究シーズ公開サイトのMVPです。</p>
       </div>
       <div className="footer-links">
+        <a href="#/consult">AI研究相談</a>
         <a href="#/data-editor">データ編集支援</a>
         <a href="#/contact">問い合わせ</a>
       </div>
