@@ -22,8 +22,11 @@ src/
   utils/                検索・検証・URL処理
   pages/                画面
   components/           共通UI
+scripts/
+  generate-ai-index.ts  AI検索用インデックス生成
 public/
   media/seeds/          研究シーズ画像
+  data/                 ビルド時にAI検索用データを生成
 docs/                   運用ドキュメント
 .github/workflows/      GitHub Pagesデプロイ
 ```
@@ -35,14 +38,23 @@ npm install
 npm run dev
 ```
 
+`npm run dev`の前に、公開中の研究シーズJSONから`public/data/seeds-index.json`を自動生成します。
+
 ## 品質確認コマンド
 
 ```bash
 npm run validate:data
+npm run generate:ai-index
 npm run lint
 npm run test
 npm run build
 ```
+
+## AI研究相談 PoC
+
+`#/consult`にAI研究相談のPhase A UIがあります。現段階の画面では公開中の研究シーズを使ったダミー推薦を表示し、OpenAI APIやMCPへの接続はまだ行いません。
+
+AI検索用データは`src/content/seeds/*.json`を正本として、`npm run generate:ai-index`で`public/data/seeds-index.json`へ生成します。対象は`status: "published"`の研究シーズのみです。生成ファイルはビルド成果物として扱い、Gitでは管理しません。
 
 ## GitHub Pagesへの公開方法
 
@@ -52,7 +64,7 @@ npm run build
 2. データ検証
 3. Lint
 4. テスト
-5. 本番ビルド
+5. AI検索用インデックス生成を含む本番ビルド
 6. GitHub Pagesへのデプロイ
 
 リポジトリ設定のPagesで、SourceをGitHub Actionsにしてください。
@@ -64,6 +76,8 @@ npm run build
 3. 画像を`public/media/seeds/seed-xxx/`に追加します。
 4. `npm run validate:data`を実行します。
 5. Pull Requestまたはコミットで反映します。
+
+AI検索用インデックスは次回の`npm run dev`または`npm run build`で自動更新されます。
 
 ## 研究シーズの修正方法
 
