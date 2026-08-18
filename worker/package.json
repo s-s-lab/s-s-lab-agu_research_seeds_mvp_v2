@@ -1,0 +1,24 @@
+{
+  "name": "agu-research-seeds-ai-worker",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "wrangler check",
+    "cf-typegen": "wrangler types ./worker-configuration.d.ts",
+    "typecheck": "npm run cf-typegen && tsc --noEmit",
+    "test": "npm run cf-typegen && vitest run"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "2.0.0",
+    "agents": "^0.20.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8",
+    "wrangler": "^4.0.0"
+  }
+}

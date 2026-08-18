@@ -4,3 +4,6 @@ coverage/
 .DS_Store
 *.local
 *.log
+public/data/seeds-index.json
+worker/worker-configuration.d.ts
+worker/.wrangler/

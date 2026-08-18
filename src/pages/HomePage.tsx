@@ -1,5 +1,5 @@
 import { FormEvent, useMemo, useState } from "react";
-import { ArrowRight, Building2, Mail, Search } from "lucide-react";
+import { ArrowRight, Building2, Mail, Search, Sparkles } from "lucide-react";
 import type { ResearchSeed } from "../types/researchSeed";
 import { SeedCard } from "../components/SeedCard";
 import { getFilterOptions, getPublishedSeeds } from "../utils/seedFilters";
@@ -49,6 +49,18 @@ export const HomePage = ({ seeds }: HomePageProps) => {
               </button>
             </div>
           </form>
+
+          <div className="hero-ai-cta">
+            <Sparkles size={24} aria-hidden="true" />
+            <div>
+              <strong>何を探せばよいか分からないときは、AI研究相談へ</strong>
+              <span>解決したい課題を自然な言葉で入力すると、関連する研究シーズとの接点を探します。</span>
+            </div>
+            <a className="button secondary" href="#/consult">
+              AIに相談する
+              <ArrowRight size={16} aria-hidden="true" />
+            </a>
+          </div>
         </div>
         <div className="hero-panel" aria-label="公開データ概要">
           <dl>
