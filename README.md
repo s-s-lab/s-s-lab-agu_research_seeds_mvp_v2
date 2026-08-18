@@ -11,6 +11,7 @@
 - GitHub Actions
 - JSONによる研究シーズ管理
 - Cloudflare Workers / Wrangler（AI研究相談バックエンド）
+- Model Context Protocol / Streamable HTTP
 - Lucide Reactによるアイコン表示
 - Vitestによるテスト
 
@@ -29,7 +30,7 @@ public/
   media/seeds/          研究シーズ画像
   data/                 ビルド時にAI検索用データを生成
 worker/
-  src/                  AI研究相談Worker
+  src/                  AI研究相談API / MCP Server
   wrangler.jsonc        Cloudflare Workers設定
   README.md             Worker開発手順
 docs/                   運用ドキュメント
@@ -100,7 +101,22 @@ AI検索用データは`src/content/seeds/*.json`を正本として、`npm run g
 - 共通JSONエラー形式と`requestId`
 - 構造化ログとCloudflare Observability
 
-Phase C時点ではOpenAI Responses APIとMCPは未接続です。妥当な`/api/consult`リクエストには意図的に`501 AI_NOT_CONNECTED`を返し、AIが稼働しているように見せない設計としています。
+`/api/consult`はOpenAI Responses API接続前のため、妥当なリクエストに意図的に`501 AI_NOT_CONNECTED`を返します。
+
+### Phase D — Research Seeds MCP
+
+`worker`にステートレスなRemote MCP Serverを追加しています。
+
+- `/mcp` — Streamable HTTP endpoint
+- `search_seeds` — 公開中の研究シーズを企業課題・テーマ・業界から検索
+- `get_seed` — 検索済み公開シーズの詳細なAIマッチング用情報を取得
+- MCP toolsは読み取り専用
+- `status: "published"`のみを含む生成インデックスを参照
+- キーワード、想定用途、研究分野等を使う重み付き検索
+- `matchEvidence`で検索根拠を返却
+- 研究シーズインデックス取得は2 MiB上限・構造検証付き
+
+新規MCPは`@modelcontextprotocol/server` v2とCloudflare Agents SDKの`createMcpHandler()`を使用し、`McpAgent`、旧HTTP+SSE、Durable Objectは使用しません。
 
 詳細は[`worker/README.md`](worker/README.md)を参照してください。
 
