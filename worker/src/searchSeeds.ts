@@ -54,7 +54,7 @@ const addTerm = (terms: Set<string>, value: string): void => {
 const extractSearchTerms = (input: SearchSeedsInput): string[] => {
   const terms = new Set<string>();
 
-  for (const part of input.query.split(/[\s、。,.!?！？・:：;；/／()（）\[\]【】{}「」『』"'`]+/u)) {
+  for (const part of input.query.split(/[\s、。,.!?！？・:：;；/／()（）【】{}「」『』"'`]+/u)) {
     addTerm(terms, part);
 
     const semanticParts = part.match(
