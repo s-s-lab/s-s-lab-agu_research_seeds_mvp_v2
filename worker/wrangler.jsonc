@@ -5,7 +5,8 @@
   "compatibility_date": "2026-08-18",
   "compatibility_flags": ["nodejs_compat"],
   "vars": {
-    "ALLOWED_ORIGINS": "https://s-s-lab.github.io,http://localhost:5173,http://127.0.0.1:5173"
+    "ALLOWED_ORIGINS": "https://s-s-lab.github.io,http://localhost:5173,http://127.0.0.1:5173",
+    "SEEDS_INDEX_URL": "https://s-s-lab.github.io/s-s-lab-agu_research_seeds_mvp_v2/data/seeds-index.json"
   },
   "observability": {
     "enabled": true,
