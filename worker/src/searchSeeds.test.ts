@@ -90,6 +90,14 @@ describe("searchSeeds", () => {
     expect(output).toEqual({ count: 0, results: [] });
   });
 
+  it("does not treat collaboration intent alone as a research match", () => {
+    const output = searchSeeds(index, {
+      query: "共同研究について相談したい",
+    });
+
+    expect(output).toEqual({ count: 0, results: [] });
+  });
+
   it("respects the requested result limit", () => {
     const output = searchSeeds(index, {
       query: "データ",
