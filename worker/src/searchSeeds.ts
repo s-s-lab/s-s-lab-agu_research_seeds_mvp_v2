@@ -27,6 +27,8 @@ export type SearchSeedsOutput = {
   results: SeedSearchResult[];
 };
 
+const MIN_MATCH_SCORE = 3;
+
 const STOP_TERMS = new Set([
   "研究",
   "技術",
@@ -38,6 +40,7 @@ const STOP_TERMS = new Set([
   "実現",
   "可能",
   "対応",
+  "相談",
 ]);
 
 const normalizeText = (value: string): string =>
@@ -147,7 +150,7 @@ export const searchSeeds = (
 
   const results = index.seeds
     .map((seed) => ({ seed, ...scoreSeed(seed, terms) }))
-    .filter(({ score }) => score > 0)
+    .filter(({ score }) => score >= MIN_MATCH_SCORE)
     .sort(
       (left, right) =>
         right.score - left.score || left.seed.title.localeCompare(right.seed.title, "ja"),
